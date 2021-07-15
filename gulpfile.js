@@ -150,7 +150,7 @@ function taskBuildDel (done) {
 
 // 公開用のフォルダの生成
 function taskBuildFile (done) {
-  gulp.src(['./public/css/**/*.css', './public/**/*.html'], {
+  gulp.src(['./public/**/*', '!./public/**/*.js', '!./public/**/*.{svg,jpg,jpeg,png,gif,webp}'], {
       base: './public/'
     })
     .pipe(gulp.dest('./dist/'));

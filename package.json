@@ -9,7 +9,9 @@
     "clean": "gulp clean",
     "build": "gulp build; npm run webp:build",
     "webp": "gulp webp",
-    "webp:build": "gulp webpBuild"
+    "webp:build": "gulp webpBuild",
+    "export": "git archive HEAD --output=export/export.zip",
+    "publish": "git archive HEAD public --output=export/publish.zip"
   },
   "engines": {
     "node": "14"

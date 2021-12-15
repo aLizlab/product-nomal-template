@@ -5,7 +5,7 @@ ejs, scss, typescript を用いた Web サイト制作の練習や環境構築�
 # 利用の際の事前準備
 
 - 以下のインストール
-  - node (v14)
+  - node (v16)
   - npm
     
 ※ コマンドラインでの操作となります。Windows の場合は PowerShell, Mac の場合はターミナルなどを利用してください。
@@ -14,8 +14,7 @@ ejs, scss, typescript を用いた Web サイト制作の練習や環境構築�
 
 1. このリポジトリを `git clone`
 1. `npm install` を実行し、エラーが出ていないことを確認
-1. `npm rebuild node-sass` を実行し、エラーが出ていないことを確認
-1. `npm run dev` を実行
+1. `npm run serve` を実行
   - ブラウザが自動で起動すれば成功
   - 以降の開発は `/src/` を編集して行います
   - ファイルに変更があった場合、自動で以下のことが行われます

@@ -15,8 +15,6 @@ const ejs = require('gulp-ejs');
 // CSS 系
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
-// TODO: いつか頑張って追加する
-// const tailwindcss = require('tailwindcss');
 const autoprefixer = require('autoprefixer');
 
 // JS 系
@@ -84,13 +82,6 @@ function taskEjs (done) {
 // scss のビルドを行う
 function taskSass (done) {
   const plugins = [
-    // tailwindcss({
-    //   jit: true,
-    //   purge: [
-    //     './public/**/*.html',
-    //     './src/ejs/**/*.ejs',
-    //   ],
-    // }),
     autoprefixer({ cascade: false }),
   ];
 
@@ -109,7 +100,7 @@ function taskSass (done) {
 
 // ts のビルドを行う
 function taskTs (done) {
-  gulp.src(['./src/js/**/*.ts', '!./src/js/**/_*.ts'])
+  gulp.src(['./src/ts/**/*.ts', '!./src/ts/**/_*.ts'])
     .pipe(
       plumber({
         errorHandler: onError
@@ -129,7 +120,7 @@ function taskTs (done) {
 function taskSurvey (done) {
   gulp.watch('./src/ejs/**/*.ejs', gulp.series(taskEjs, taskReload));
   gulp.watch('./src/scss/**/*.scss', gulp.parallel(taskSass, taskReload));
-  gulp.watch('./src/ejs/**/*.ts', gulp.series(taskTs, taskReload));
+  gulp.watch('./src/ts/**/*.ts', gulp.series(taskTs, taskReload));
 
   done();
 }

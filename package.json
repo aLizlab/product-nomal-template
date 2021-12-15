@@ -1,11 +1,11 @@
 {
-  "name": "lp_practice2",
+  "name": "Web Template - aLiz",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp",
+    "serve": "gulp",
     "clean": "gulp clean",
     "build": "gulp build; npm run webp:build",
     "webp": "gulp webp",
@@ -14,18 +14,18 @@
     "publish": "git archive HEAD public --output=export/publish.zip"
   },
   "engines": {
-    "node": "14"
+    "node": "16"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/engclass-z/lp_practice2.git"
+    "url": "git+https://github.com/aLizlab/product-web-template.git"
   },
   "author": "aLiz-Nancy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/engclass-z/lp_practice2/issues"
+    "url": "https://github.com/aLizlab/product-web-template/issues"
   },
-  "homepage": "https://github.com/engclass-z/lp_practice2#readme",
+  "homepage": "https://github.com/aLizlab/product-web-template#readme",
   "dependencies": {
     "autoprefixer": "^10.3.1",
     "browser-sync": "^2.27.4",

@@ -60,4 +60,4 @@ ejs, scss, typescript を用いた Web サイト制作の練習や環境構築�
 
 # 参考
 
-https://github.com/engclass-z/lp_template2 のテンプレートを利用しています。
+https://github.com/aLizlab/product-web-template のテンプレートを利用しています。

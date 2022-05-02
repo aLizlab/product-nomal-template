@@ -1,0 +1,12 @@
+@use '../mixin' as *;
+@use '../variable' as *;
+
+.sectionWrap {
+  @include flex(center, center);
+
+  > .sectionWrap-inner {
+    @include box(100%);
+
+    max-width: $cont-wrap;
+  }
+}

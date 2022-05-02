@@ -1,0 +1,11 @@
+@use '../mixin' as *;
+@use '../variable' as *;
+
+@forward 'color';
+@forward 'font';
+@forward 'sectionWrap';
+@forward 'transition';
+
+html {
+  @include font(20px, 500, 1.5);
+}

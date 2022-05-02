@@ -1,0 +1,10 @@
+@mixin bg($color: null, $img: null, $size: null, $pos: null) {
+  background-color: $color;
+  background-size: $size;
+  background-position: $pos;
+
+  @if $img {
+    background-image: url($img);
+    background-repeat: no-repeat;
+  }
+}
